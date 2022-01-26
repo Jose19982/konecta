@@ -27,4 +27,12 @@ ENGINE = InnoDB;
 
 Desplegar la aplicacion en un servidor como XAMPP.
 
-para la base de datos el usuario es root la ip es localhost, sin contraseña
+para la base de datos el usuario es root la ip es localhost, sin contraseña;
+
+Setencia para obtener el producto con mayor stock:
+select MAX(stock) stock, nombre_producto, referencia, precio, peso, categoria, fecha_creacion fechaCreacion
+from productos;
+
+Sentencia para obtener el producto que mas se vendio:
+select MAX(vp.cantidad_vendida) cantidadVendida, p.nombre_producto, p.referencia, p.precio, p.peso, p.categoria, p.fecha_creacion fechaCreacion
+from venta_productos vp join productos p on vp.id_producto = p.id ;
