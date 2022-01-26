@@ -1,4 +1,5 @@
 ejecutar el archivo index.php
+si no se lanza, escribir en la url localhost/views/verProductos.php
 
 Crear la base de datos en mysql con los siguientes scripts
 
